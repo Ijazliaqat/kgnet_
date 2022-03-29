@@ -1,0 +1,66 @@
+.appdownload {
+    width: 100%;
+  .inner-container {
+    margin-top: 40px;
+    background-color: #eef2ff;
+    padding: 50px 0;
+    display: flex;
+    justify-content: center;
+
+    .left-shoping-img{
+        img{
+            width: 30rem;
+            height: auto;
+        }
+    }
+
+    .middle-container{
+        padding: 20px 0;
+        h1{
+            font-size: 2rem;
+            font-weight: bold;
+            text-align: center;
+        }
+        p{
+            font-size: 1rem;
+            text-align: center;
+            width: 440px;
+        }
+    }
+
+    .store-images{
+        display: inline-flex;
+        margin-top: 30px;
+        .left-store-img{
+            margin-left: 50px;
+            width: 150px;
+            display: flex;
+        }
+        .right-store-img{
+            margin-left: 20px;
+            width: 150px;
+        }
+    }
+
+    .right-shoping-img{
+        img{
+            // width: 27rem;
+            height: auto;
+        }
+    }
+  }
+}
+
+@media screen and (max-width: 930px){
+    .left-shoping-img{
+        display: none;
+    }
+
+    .right-shoping-img{
+        display: none;
+    }
+
+    .inner-container {
+        padding: 0;
+    }
+}

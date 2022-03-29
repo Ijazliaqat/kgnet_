@@ -1,0 +1,122 @@
+.main-container {
+  justify-content: center;
+  gap: 15px;
+  padding: 0px 0 0 80px;
+  width: 100%;
+}
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 140px;
+  font-size: 2rem;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  font-family: "Italianno", cursive;
+
+  span {
+    color: rgb(16, 185, 129);
+    font-family: "Italianno", cursive;
+  }
+}
+
+hr {
+  border: 1px dashed;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+}
+
+.product-details{
+  display: flex;
+  justify-content: space-between;
+  width: 70%;
+
+  .product-text{
+    p{
+      width: 100%;
+    }
+  }
+}
+
+.cart-btn{
+    color: #10b981;
+}
+
+
+// Tabs Section
+
+.mat-tab-group {
+  margin-bottom: 48px;
+}
+
+
+.tabs{
+  padding: 30px  80px;
+
+}
+
+// related products
+
+
+.main-container {
+  justify-content: center;
+  gap: 15px;
+  padding: 0px 0 0 80px;
+  width: 100%;
+}
+
+.card {
+  height: 25rem;
+  padding: 50px;
+  h3 {
+    bottom: 0;
+  }
+}
+
+
+section h2 {
+  display: flex;
+  justify-content: center;
+  margin-top: 150px;
+  font-size: 2rem;
+  word-spacing: 20px;
+  letter-spacing: 5px;
+  font-family: "Italianno", cursive;
+
+  span {
+    color: rgb(16, 185, 129);
+    font-family: "Italianno", cursive;
+  }
+}
+
+hr {
+  border: 1px dashed;
+  width: 95%;
+  margin: 0;
+  padding: 0;
+}
+.product-details {
+  display: flex;
+  justify-content: space-around;
+}
+
+a {
+  .btn {
+    outline: none;
+    padding: 5px 5px;
+
+    mat-icon {
+      color: #10b981;
+    }
+  }
+}
+
+img {
+  transform: scale(0.9);
+  transition: 0.3s ease-in-out;
+}
+
+img:hover {
+  transform: scale(1);
+}

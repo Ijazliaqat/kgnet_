@@ -1,0 +1,82 @@
+<div class="top-header">
+    <div>
+        <img class="call-icon" src="../../assets/iconz/telephone-call.png" alt="call">
+        <a class="top-header-text">We are available 24/7, Need help? Call Us:</a>
+        <a class="tel" href="tel:+60392130688">+603 9213 0688</a>
+    </div>
+    <div class="top-user">
+        <a href="#">About Us</a>
+        <a href="#">Contact Us</a>
+        <a href="#"><img class="user-icon" src="../../assets/iconz/user.png" alt="user"> Login</a>
+    </div>
+</div>
+
+
+<mat-toolbar>
+    <button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon">
+        <img class="logo" src="../../assets/imgs/logo3.png" alt="">
+    </button>
+      <span class="example-spacer"></span>
+    
+    <form type="submit" class="submit-btn">
+        <input type="search"  class="search_box" placeholder="Search Your Product...">
+        <a type="button"><i class="fa-solid fa-magnifying-glass"></i></a>
+    </form>
+  
+    <div class="icons">
+        <button mat-icon-button class="example-icon favorite_icon" aria-label="Example icon-button with heart icon">
+            <mat-icon>favorite</mat-icon>
+        </button>
+        <button mat-icon-button type="button"  data-bs-toggle="modal" data-bs-target="#exampleModal">
+            <mat-icon>add_shopping_cart</mat-icon>
+            <div class="badge bg-danger">5</div>
+        </button>
+        <button mat-icon-button>
+            <mat-icon>supervised_user_circle</mat-icon>
+        </button>
+    </div>
+  </mat-toolbar>
+
+
+
+
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <tbody *ngFor="let product of productArray">
+              <td>
+                <img class="product-img" src="{{product.img}}">               
+              </td>
+              <td class="w-30">
+                <h4>{{product.productName}}</h4>
+                <p>{{product.amount}} </p>
+              </td>
+              <td class="">
+                <a class="btn-model">
+                    <a class="btn "><i class="fa-solid fa-plus"></i></a>
+                    <span class="products">1</span>
+                    <a class="btn"><i class="fa-solid fa-minus"></i></a>
+                  </a>
+              </td>
+              <td class="w-20">
+                <button type="button" class="btn"><i class="fa-solid fa-trash-can"></i></button>
+              </td>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="popup-price">
+              <span>Proceed to Checkout</span>
+              <span>$ 0.00</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>

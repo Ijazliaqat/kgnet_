@@ -1,0 +1,51 @@
+
+.footer{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-color: rgb(227, 234, 241);
+    width: 100%;
+    margin-top: 30px;
+}
+.colom-1{
+    padding: 20px 50px;
+    cursor: pointer;
+    
+}
+
+.colom-1 ul{
+    padding: 0;
+    margin: 0;
+}
+
+.colom-1 ul li{
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.colom-1 ul li i{
+    margin-right: 10px;
+    font-size: 15px;
+}
+
+.colom-1 ul li .email a{
+    text-decoration: none;
+    color: black;
+}
+
+.colom-1 ul li .number a{
+    text-decoration: none;
+    color: rgb(16,185,129);
+
+}
+
+.colom-2{
+    padding: 20px 50px;
+    margin-top: 70px;
+    cursor: pointer;
+}
+
+.colom-2 ul li{
+    list-style-type: none;
+    margin-top: 10px;
+}

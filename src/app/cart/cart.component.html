@@ -1,0 +1,75 @@
+
+<!-- <div class="shopping-btn">
+    <button >
+        <div class="shopping-icon">
+            <img src="../../assets/iconz/bag.png">
+        </div>
+        <div class="total-items">
+            <span>0 Items</span>
+        </div>
+        <div class="total-price">
+            <span>$ 0.00</span>
+        </div>
+    </button>
+</div> -->
+
+<!-- Button trigger modal -->
+<button type="button" data-bs-toggle="modal" data-bs-target="#exampleModal">
+    <div class="shopping-btn">
+        <button >
+            <div class="shopping-icon">
+                <img src="../../assets/iconz/bag.png">
+            </div>
+            <div class="total-items">
+                <span>0 Items</span>
+            </div>
+            <div class="total-price">
+                <span>$ 0.00</span>
+            </div>
+        </button>
+    </div>
+  </button>
+  
+  <!-- Modal -->
+  <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title" id="exampleModalLabel">Shopping Cart</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <table class="table">
+            <tbody *ngFor="let product of productArray">
+              <td>
+                <img class="product-img" src="{{product.img}}">               
+              </td>
+              <td class="w-30">
+                <h4>{{product.productName}}</h4>
+                <p>{{product.amount}} </p>
+              </td>
+              <td class="d-flex w-30">
+                <button type="button" class="btn w-30">
+                  <i class="fa-solid fa-plus"></i>
+                </button>
+                <span>1</span>
+                <button type="button" class="btn w-30">
+                  <i class="fa-solid fa-minus"></i>
+                </button>
+              </td>
+              <td class="w-20">
+                <button type="button" class="btn"><i class="fa-solid fa-trash-can"></i></button>
+              </td>
+              
+            </tbody>
+          </table>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="popup-price">
+              <span>Proceed to Checkout</span>
+              <span>$ 0.00</span>
+            </button>
+        </div>
+      </div>
+    </div>
+  </div>

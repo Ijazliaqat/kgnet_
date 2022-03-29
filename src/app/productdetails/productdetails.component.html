@@ -1,0 +1,97 @@
+<div class="main-container row">
+  <section>
+    <h2><span>P</span>roduct Detail</h2>
+  </section>
+  <hr />
+  <div class="product-details" *ngFor="let product of itemsArray">
+    <div>
+        <img src="{{ product.img }}" alt="product Image" />
+    </div>
+    
+    <div class="product-text">
+      <h1>{{ product.itemName }}</h1>
+      <p>{{ product.details }}</p>
+      <h2>{{ product.itemPrice }}</h2>
+
+      <a class="btn">
+        <mat-icon>favorite_border</mat-icon>
+        <a class="btn" (click)="inc(product)">
+            <i class="fa-solid fa-plus"></i>
+        </a>
+        <span>{{ product.qnt }}</span>
+        <a class="btn" (click)="dec(product)">
+            <i class="fa-solid fa-minus"></i>
+        </a>
+      </a>
+
+      <a class="cart-btn"><mat-icon>add_shopping_cart</mat-icon></a>
+    </div>
+  </div>
+</div>
+
+<div class="tabs">
+  <mat-tab-group animationDuration="0ms" *ngFor="let product of itemsArray">
+    <mat-tab>
+      <ng-template class="tab-heading" mat-tab-label>
+        <h2>Description</h2>
+      </ng-template>
+      <h2>{{ product.itemName }}</h2>
+      <p>{{ product.details }}</p>
+    </mat-tab>
+
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <h2>Location</h2>
+      </ng-template>
+      <div style="width: 100%">
+        <iframe
+          width="100%"
+          height="360"
+          frameborder="0"
+          scrolling="no"
+          marginheight="0"
+          marginwidth="0"
+          src="https://maps.google.com/maps?width=100%25&amp;height=600&amp;hl=en&amp;q=1%20Grafton%20Street,%20Dublin,%20Ireland+(My%20Business%20Name)&amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"
+          ><a href="https://www.gps.ie/marine-gps/">boat tracking</a>
+        </iframe>
+      </div>
+    </mat-tab>
+    <mat-tab>
+      <ng-template mat-tab-label>
+        <h2>Related Product</h2>
+      </ng-template>
+
+      <div class="main-container row">
+        <div
+          class="card"
+          style="width: 17rem"
+          *ngFor="let item of relatedItems"
+        >
+          <img
+            routerLink="/productdetails"
+            src="{{ item.img }}"
+            class="card-img-top"
+          />
+          <div class="card-body">
+            <h3 class="card-title">{{ item.itemName }}</h3>
+            <div class="product-details" style="width: 14rem">
+              <a class="btn"><mat-icon>add_shopping_cart</mat-icon></a>
+              <a class="btn">
+                <a class="btn" (click)="inc(item)"
+                  ><i class="fa-solid fa-plus"></i
+                ></a>
+                <span>{{ item.qnt }}</span>
+                <a class="btn" (click)="dec(item)"
+                  ><i class="fa-solid fa-minus"></i
+                ></a>
+              </a>
+              <a class="btn"
+                ><span class="Price">{{ item.itemPrice }}</span></a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </mat-tab>
+  </mat-tab-group>
+</div>

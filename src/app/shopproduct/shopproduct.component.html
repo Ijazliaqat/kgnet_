@@ -1,0 +1,128 @@
+<div class="main-container row">
+  <section>
+    <div class="categories">
+      <carousel>
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+
+        <div class="carousel-cell">          
+          <img class="category-img" src="../../assets/imgs/snacks & instants.webp" alt="">
+          <h3>Snacks & Instants</h3>
+        </div>
+       
+      </carousel>
+    </div>
+  </section>
+
+  <section>
+    <h2><span>T</span>op Products</h2>
+  </section>
+  <hr />
+  <div class="card" style="width: 17rem" *ngFor="let item of itemsArray">
+    <img
+      routerLink="/productdetails"
+      src="{{ item.img }}"
+      class="card-img-top"
+    />
+    <div class="card-body">
+      <h3 class="card-title">{{ item.itemName }}</h3>
+      <div class="product-details" style="width: 14rem">
+        <a class="btn"><mat-icon>add_shopping_cart</mat-icon></a>
+        <a class="btn">
+          <a class="btn" (click)="inc(item)"
+            ><i class="fa-solid fa-plus"></i
+          ></a>
+          <span>{{ item.qnt }}</span>
+          <a class="btn" (click)="dec(item)"
+            ><i class="fa-solid fa-minus"></i
+          ></a>
+        </a>
+        <a class="btn"
+          ><span class="Price">{{ item.itemPrice }}</span></a
+        >
+      </div>
+    </div>
+  </div>
+</div>

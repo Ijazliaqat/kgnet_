@@ -1,5 +1,6 @@
 .appdownload {
     width: 100%;
+    justify-content: center;
   .inner-container {
     margin-top: 40px;
     background-color: #eef2ff;
@@ -24,21 +25,20 @@
         p{
             font-size: 1rem;
             text-align: center;
-            width: 440px;
+            padding: 0 10%;
+            
         }
     }
 
     .store-images{
         display: inline-flex;
         margin-top: 30px;
+        padding: 0 22%;
         .left-store-img{
-            margin-left: 50px;
-            width: 150px;
             display: flex;
         }
         .right-store-img{
             margin-left: 20px;
-            width: 150px;
         }
     }
 

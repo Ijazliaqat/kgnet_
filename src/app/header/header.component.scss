@@ -40,21 +40,29 @@ mat-toolbar {
   position: fixed;
   z-index: 100;
 }
+
 button {
   color: #fff;
   outline: none;
   border: none;
-  
 }
 
-form{
+form {
   margin-left: 14%;
 }
 
-.search-btn{
+.search-btn {
   color: #10b981;
   background-color: #0c9164;
-  
+}
+
+.search-glass {
+  background-color: #94c0b1;
+  height: 50px;
+  width: 35px;
+  padding: 10px;
+  position: absolute;
+  border-radius: 9px;
 }
 
 .logo {
@@ -69,6 +77,7 @@ form{
   top: -16px;
   right: 10px;
 }
+
 .search_box {
   margin-left: 100px;
   width: 75%;
@@ -77,11 +86,12 @@ form{
   border-radius: 5px;
   border: none;
 }
+
 .submit-btn {
   width: 100%;
   height: 50px;
 
-  a{
+  a {
     color: #10b981;
     margin-left: -30px;
   }
@@ -103,7 +113,7 @@ span {
   margin-left: -10px;
 }
 
-.products{
+.products {
   color: black;
 }
 
@@ -125,19 +135,16 @@ mat-sidenav {
   z-index: 11;
 }
 
-
-
-.modal-header{
+.modal-header {
   background-color: #0c9164;
   color: white;
-
 }
 
-.modal-body{
+.modal-body {
   height: 300px;
 }
 
-.popup-price{
+.popup-price {
   display: flex;
   justify-content: space-between;
   color: white;
@@ -148,38 +155,35 @@ mat-sidenav {
   padding: 15px;
 }
 
-.fa-plus{
+.fa-plus {
   margin-right: 20px;
 }
 
-.fa-trash-can{
+.fa-trash-can {
   color: red;
 }
 
-
-.product-img{
+.product-img {
   height: 100px;
 }
 
 @media screen and (max-width: 770px) {
   mat-toolbar {
     margin-top: -25px;
-  .logo {
-    display: none;
-    
+    .logo {
+      display: none;
+    }
   }
-}
 
+  .icons {
+    margin-top: 22px;
+  }
+  .submit-btn {
+    margin-top: 26px;
+    margin-left: -20px;
+  }
 
-.icons{
-  margin-top: 22px;
-}
-.submit-btn{
-  margin-top: 26px;
-  margin-left: -20px;
-}
-
-.top-header{
+  .top-header {
     display: none;
   }
 
@@ -187,57 +191,3 @@ mat-sidenav {
     margin-left: 0;
   }
 }
-
-
-
-// header{
-//     width: 100%;
-//     height: 100px;
-//     display: flex;
-//     padding:  0 20px;
-//     margin-top: 25px;
-//     color: white;
-//     background-color: #10b981;
-//     position: fixed;
-//     z-index: 100;
-
-//     .logo{
-//         width: 70%;
-//         height: auto;
-//     }
-
-//     .search-input{
-//         width: 70%;
-//     }
-
-//     #search-box{
-//         margin-left: 100px;
-//         height: 40px;
-//         width: 80%;
-//         margin-top: 30px;
-//         border-radius: 10px;
-//         border: none;
-
-//     }
-
-//     ::placeholder{
-//         padding: 10px;
-//         font-size: 15px;
-//     }
-
-//     .search-btn{
-//         position: fixed;
-//         margin-left: -40px;
-//         margin-top: 30px;
-
-//     }
-
-//     .user-details{
-//         margin-top: 30px;
-//         margin-right: 30px;
-//     }
-// }
-
-// @media (max-width: 850px){
-
-// }

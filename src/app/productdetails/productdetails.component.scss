@@ -40,7 +40,7 @@ hr {
 }
 
 .cart-btn{
-    color: #10b981;
+  color: #10b981;
 }
 
 
@@ -101,15 +101,8 @@ hr {
   justify-content: space-around;
 }
 
-a {
-  .btn {
-    outline: none;
-    padding: 5px 5px;
-
-    mat-icon {
-      color: #10b981;
-    }
-  }
+.quantity{
+  outline: none;
 }
 
 img {

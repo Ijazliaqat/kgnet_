@@ -5,26 +5,42 @@
   <hr />
   <div class="product-details" *ngFor="let product of itemsArray">
     <div>
-        <img src="{{ product.img }}" alt="product Image" />
+      <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src={{product.img}} class="d-block" alt="...">
+          </div>
+          <div class="carousel-item">
+            <img src={{product.img}} class="d-block" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon btn-success" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon btn-success" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
     </div>
-    
+
     <div class="product-text">
       <h1>{{ product.itemName }}</h1>
       <p>{{ product.details }}</p>
       <h2>{{ product.itemPrice }}</h2>
 
-      <a class="btn">
-        <mat-icon>favorite_border</mat-icon>
-        <a class="btn" (click)="inc(product)">
-            <i class="fa-solid fa-plus"></i>
+      <div class="row">
+        <mat-icon class="col-sm-2">favorite_border</mat-icon>
+        <a class="btn col-sm-2 quantity" (click)="inc(product)">
+          <i class="fa-solid fa-plus"></i>
         </a>
-        <span>{{ product.qnt }}</span>
-        <a class="btn" (click)="dec(product)">
-            <i class="fa-solid fa-minus"></i>
+        <span class="col-sm-2 quantity">{{ product.qnt }}</span>
+        <a class="btn col-sm-2" (click)="dec(product)">
+          <i class="fa-solid fa-minus"></i>
         </a>
-      </a>
-
-      <a class="cart-btn"><mat-icon>add_shopping_cart</mat-icon></a>
+        <a class="cart-btn col-sm-2"><mat-icon>add_shopping_cart</mat-icon></a>
+      </div>
     </div>
   </div>
 </div>

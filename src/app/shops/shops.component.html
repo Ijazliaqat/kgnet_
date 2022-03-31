@@ -25,7 +25,7 @@
             <a></a>
           </div>
         </div>
-      </div><!-- End Service Item -->
+      </div>
 
       <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="600">
         <div class="service-item">
@@ -43,7 +43,7 @@
             <a class="stretched-link"></a>
           </div>
         </div>
-      </div><!-- End Service Item -->
+      </div>
 
       <div class="col-xl-4 col-md-6" data-aos="zoom-in" data-aos-delay="700">
         <div class="service-item">
@@ -61,7 +61,7 @@
             <a class="stretched-link"></a>
           </div>
         </div>
-      </div><!-- End Service Item -->
+      </div>
 
     </div>
 
@@ -69,6 +69,94 @@
 </section>
 
 <!-- End Service Session -->
+
+
+<!-- Partner Section -->
+
+<carousel>
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+
+  <div class="carousel-cell">          
+    <img class="category-img" src="../../assets/imgs/logo_dum.png" alt="">
+    <h3>Snacks & Instants</h3>
+  </div>
+ 
+</carousel>
+
+<!-- Partner Section End -->
 
 
 
@@ -108,7 +196,7 @@
     <div class="card-body">
       <h3 class="card-title">{{product.productName}}</h3>
       <div class="product-details" style="width: 14rem">
-        <a class="btn"><mat-icon>add_shopping_cart</mat-icon></a>
+        <a class="btn" (click)="addCart(product)"><mat-icon>add_shopping_cart</mat-icon></a>
         <a class="btn">
           <a class="btn" (click)="inc(product)"><i class="fa-solid fa-plus"></i></a>
           <span>{{product.qnt}}</span>
@@ -119,4 +207,6 @@
     </div>
   </div>
 </div>
+
+
 
